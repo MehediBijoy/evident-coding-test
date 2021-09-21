@@ -1,0 +1,18 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+<div class="main">
+    <h1 class="main__title">search The value</h1>
+    <form method="POST" class="main__form">
+        <div class="form__group">
+            <input type="text" class="form__input" placeholder="Input value" id="input" required>
+            <label for="input" class="form__label">Input value</label>
+        </div>
+        <div class="form__group">
+            <input type="text" class="form__input" placeholder="search value" id="search" required>
+            <label for="search" class="form__label">Email Address</label>
+        </div>
+        <button class="form__submit" type="submit">search</button>
+    </form>
+</div>
+{% endblock %}

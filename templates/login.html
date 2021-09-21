@@ -1,0 +1,22 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+<div class="main">
+    <h1 class="main__title">Login</h1>
+    {% include 'alert.html' %}
+    <form method="POST" class="main__form">
+        {% csrf_token %}
+        <div class="form__group">
+            <input type="text" class="form__input" placeholder="username" name="username" id="username"
+                autocomplete="off" required>
+            <label for="input" class="form__label">username</label>
+        </div>
+        <div class="form__group">
+            <input type="password" class="form__input" placeholder="password" name="password" id="password"
+                autocomplete="off" required>
+            <label for="password" class="form__label">password</label>
+        </div>
+        <button class="form__submit" type="submit">Login</button>
+    </form>
+</div>
+{% endblock %}

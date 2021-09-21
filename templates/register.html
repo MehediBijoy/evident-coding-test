@@ -1,0 +1,14 @@
+{% extends 'Base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="main">
+    <h1 class="main__title">Register</h1>
+    <form method="POST" class="main__form">
+        <div style="font-size: 2rem; margin-bottom: 1.6rem;">
+            {{ form | crispy }}
+        </div>
+        <button class="form__submit" type="submit">signup</button>
+    </form>
+</div>
+{% endblock %}
