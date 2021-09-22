@@ -35,4 +35,9 @@ Project live [https://evidentcodingtest.herokuapp.com/](https://evidentcodingtes
 now get request to my ```http://127.0.0.1:8000/api/``` with pass the access token in header. You must add ```Bearer``` with token, please check screenshot <br><br>
 <kbd>![Optional Text](./images/2.jpg)</kbd>
 
+# user id
+superuser -----> username: admin, password: test54321 <br>
+user ----------> username: user1, password: test54321
+
+
 That's all, Thank you <3 
