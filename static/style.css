@@ -80,6 +80,10 @@ body {
     background-color: #7027A0;
 }
 
+.button-logout {
+    background-color: #FFB830;
+}
+
 .main {
     position: absolute;
     left: 50%;
@@ -93,6 +97,12 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3rem;
+    font-family: var(--font-secondery);
+}
+
+.main__result {
+    font-size: 3rem;
+    margin-top: 2rem;
     font-family: var(--font-secondery);
 }
 

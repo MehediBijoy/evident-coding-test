@@ -4,15 +4,17 @@
 <div class="main">
     <h1 class="main__title">search The value</h1>
     <form method="POST" class="main__form">
+        {% csrf_token %}
         <div class="form__group">
-            <input type="text" class="form__input" placeholder="Input value" id="input" required>
+            <input type="text" class="form__input" placeholder="Input value" name="input" id="input" required>
             <label for="input" class="form__label">Input value</label>
         </div>
         <div class="form__group">
-            <input type="text" class="form__input" placeholder="search value" id="search" required>
-            <label for="search" class="form__label">Email Address</label>
+            <input type="text" class="form__input" placeholder="search value" name="search" id="search" required>
+            <label for="search" class="form__label">search value</label>
         </div>
         <button class="form__submit" type="submit">search</button>
+        <h1 class="main__result" >Result: {{ result }}</h1>
     </form>
 </div>
 {% endblock %}
